@@ -16,7 +16,7 @@ export const SearchFilterSchema = z.object({
 export const DrinkAPIResponse = z.object({
     idDrink: z.string().optional(),
     strDrink: z.string().optional(),
-    strDrinkThum: z.string().optional()
+    strDrinkThumb: z.string().optional()
 })
 export const DrinksAPIResponse = z.object({
     drinks: z.array(DrinkAPIResponse).optional(), // Opcional, puede estar ausente o ser un array vacío
