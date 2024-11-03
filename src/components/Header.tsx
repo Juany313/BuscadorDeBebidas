@@ -122,7 +122,7 @@ const Header = () => {
                   <input 
                     type="submit"
                     value={'Buscar Recetas'} 
-                    className="cursor pointer bg-orange-800 hover:bg-orange-900 text-white font-extrabold w-full p-2 rounded-lg uppercase"
+                    className="cursor-pointer bg-orange-800 hover:bg-orange-900 text-white font-extrabold w-full p-2 rounded-lg uppercase"
                   />
               </form>
             )}
