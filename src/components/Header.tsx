@@ -15,6 +15,7 @@ const Header = () => {
   const fetchCategories = useAppStore((state)=>state.fetchCategories)
   const categories = useAppStore((state)=>state.categories)
   const searchRecipes = useAppStore((state)=>state.searchRecipes)
+  const showNotification = useAppStore((state)=>state.showNotification)
 
   useEffect(()=>{
     fetchCategories()
@@ -32,7 +33,11 @@ const Header = () => {
 
     //TODO: Validar
     if(Object.values(searchFilters).includes('')){
-      console.log("Todos los campos son requeridos");
+      showNotification({
+        text:'Todos los campos son requeridos',
+        error: true
+      })
+      
       return
     }
 

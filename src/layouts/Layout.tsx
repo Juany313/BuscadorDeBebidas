@@ -8,7 +8,6 @@ import Notification from "../components/Notification"
 const Layout = () => {
 
   const loadFromLocalStorage =useAppStore((state)=> state.loadFromLocalStorage)
-  const notificacion =useAppStore((state)=> state.notificacion)
 
   useEffect(()=>{
     loadFromLocalStorage()
